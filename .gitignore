@@ -1,0 +1,17 @@
+# secrets —— 永远不进仓库
+backend/config/
+*.properties.local
+
+# build
+backend/target/
+frontend/node_modules/
+frontend/dist/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# os
+Thumbs.db
+.DS_Store
