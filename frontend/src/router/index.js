@@ -9,6 +9,7 @@ import ReadingView from '../views/ReadingView.vue'
 import WritingView from '../views/WritingView.vue'
 import ExamView from '../views/ExamView.vue'
 import ReportView from '../views/ReportView.vue'
+import BoardView from '../views/BoardView.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -22,7 +23,8 @@ const router = createRouter({
     { path: '/reading', component: ReadingView },
     { path: '/writing', component: WritingView },
     { path: '/exam', component: ExamView },
-    { path: '/report', component: ReportView }
+    { path: '/report', component: ReportView },
+    { path: '/board', component: BoardView }
   ]
 })
 

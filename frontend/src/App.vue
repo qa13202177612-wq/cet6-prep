@@ -16,6 +16,7 @@ async function logout() {
   <div v-if="$route.path !== '/login'" class="topbar">
     <span class="brand" @click="router.push('/')" style="cursor:pointer">🎓 六级备考站</span>
     <el-button size="small" text @click="router.push('/report')">📊 学情报告</el-button>
+    <el-button size="small" text @click="router.push('/board')">🧱 留言墙</el-button>
     <span class="who">{{ user.nickname || user.username }} · 目标 {{ user.goalScore }}</span>
     <el-button size="small" text @click="logout">退出</el-button>
   </div>
