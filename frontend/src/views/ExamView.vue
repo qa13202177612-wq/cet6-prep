@@ -42,6 +42,7 @@ onBeforeUnmount(() => clearInterval(timer))
     <div class="head">
       <el-button text @click="$router.push('/')">← 首页</el-button>
       <span v-if="started && !result" class="timer" :class="{ urgent: seconds < 60 }">⏱ {{ fmt(seconds) }}</span>
+      <el-button v-if="!started" type="primary" plain @click="$router.push('/fullexam')">📄 整卷模考(90分钟)</el-button>
     </div>
 
     <el-card v-if="!started" class="center card">
